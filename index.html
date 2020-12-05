@@ -106,6 +106,10 @@
 					</li>
 					
 					<li class="nav-item">
+            <a class="nav-link" href="https://vaccel.org#howitworks">How it Works</a>
+					</li>
+					
+					<li class="nav-item">
             <a class="nav-link" href="https://vaccel.org#contact">contact</a>
 					</li>
 					
@@ -401,6 +405,86 @@
 	</div>
 </section>
 <!-- /skill -->
+
+
+
+
+
+
+
+
+<!-- Start Pricing section -->
+<section id="howitworks" class="hiwi section">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- section title -->
+      <div class="col-lg-12">
+        <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
+		<h2> How <span class="color">
+              it works </span></h2>
+          <div class="border-meghna"></div>
+        </div>
+      </div>
+      <!-- /section title -->
+
+      
+      <!-- single hiwi table -->
+      <div class="col-lg-6 col-md-6 col-24 text-center wow fadeInUp" data-wow-duration="200ms">
+	
+        <div class="hiw-item">
+          <!-- plan name & value -->
+          <div class="hiw-title">
+            <h3>Steps</h3>
+          </div>
+	
+          <!-- plan description -->
+          <ul>
+            
+	    <li>(0): A user calls a function prototype: <pre> image_classify (input) </pre></li>
+	    
+	    <li>(a): vAccelRT determines available backends, chooses what's sane to do (use virtio-backend, use physical device etc.)</li>
+	    
+	    <li>(b): use virtio-accel, call forwarded to virtio-accel backend</li>
+	    
+	    <li>(c): virtio-accel calls vAccelRT, which, in turn, determines the relevant acceleration framework.</li>
+	    
+	    <li>(d): vAccelRT issues the call to the respective framework. The latter returns results to vAccelRT, which, forwards the output to the caller.</li>
+	    
+          </ul>
+
+          <!-- signup button -->
+          
+        </div>
+      </div>
+      <!-- end single hiwi table -->
+	
+      <!-- single hiwi table -->
+      <div class="col-lg-6 col-md-6 col-24 text-center wow fadeInUp" data-wow-duration="200ms">
+	
+        <div class="hiw-item">
+          <!-- plan name & value -->
+          <div class="">
+            <h3></h3>
+          </div>
+	
+          <!-- plan description -->
+          <ul>
+            
+	    <img src="images/vaccel.png" width="650px"/>
+            
+          </ul>
+
+          <!-- signup button -->
+          
+        </div>
+      </div>
+      <!-- end single hiwi table -->
+	
+    </div>
+  </div>
+</section>
+<!-- /hiwi -->
 
 
 
