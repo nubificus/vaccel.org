@@ -98,15 +98,15 @@
 				<ul class="navbar-nav ml-auto">
 					
 					<li class="nav-item">
-            <a class="nav-link" href="https://vaccel.org#about">about</a>
-					</li>
-					
-					<li class="nav-item">
             <a class="nav-link" href="https://vaccel.org#features">features</a>
 					</li>
 					
 					<li class="nav-item">
-            <a class="nav-link" href="https://vaccel.org#howitworks">How it Works</a>
+            <a class="nav-link" href="https://vaccel.org#howitworks">Try it now!</a>
+					</li>
+					
+					<li class="nav-item">
+            <a class="nav-link" href="https://vaccel.org#about">about</a>
 					</li>
 					
 					<li class="nav-item">
@@ -124,100 +124,6 @@
 
 
 
-
-<!-- Start About Section -->
-<section class="bg-one about section" id="about">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-12">
-				<!-- section title -->
-				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
-					<h2>  About <span class="color">
-						 Us  </span></h2>
-					<div class="border-meghna"></div>
-				</div>
-			</div>
-			<!-- /section title -->
-
-			
-			<!-- About item -->
-			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
-				<div class="block">
-					<div class="icon-box">
-						<i class="ti-ruler-pencil"></i>
-					</div>
-					<!-- Express About Yourself -->
-					<div class="content text-center">
-						<h3>We&#39;re Engineers</h3>
-						<p>We explore the systems software stack, from the ground up, hacking VMMs and boot code up to applications and unikernels.</p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- About item -->
-			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
-				<div class="block">
-					<div class="icon-box">
-						<i class="ti-cup"></i>
-					</div>
-					<!-- Express About Yourself -->
-					<div class="content text-center">
-						<h3>We&#39;re Professionals</h3>
-						<p>Backed by a young SME, we offer professional services to entities around the world, tackling complex research &amp; engineering problems.</p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- About item -->
-			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
-				<div class="block">
-					<div class="icon-box">
-						<i class="ti-thought"></i>
-					</div>
-					<!-- Express About Yourself -->
-					<div class="content text-center">
-						<h3>We have vision</h3>
-						<p>Facilitating the deployment or workloads is what makes us tick.</p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</section>
-<!-- /about -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Start Call To Action -->
-<section id="cta" class="call-to-action section-sm bg-1 overly" style='background-image: url("https://vaccel.org/images/backgrounds/bg-white-wall.webp")'>
-	
-	<img src="https://vaccel.org/images/backgrounds/bg-white-wall.webp" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/vaccel.org\/images\/backgrounds\/bg-white-wall.jpg)'">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h2>Sign-up now for our early beta!</h2>
-				<p>Be one of the first few to try out vAccel on a real Serverless deployment! Leave us a note about your project and we&rsquo;ll be in touch with you with more details on how to try it out yourself!</p>
-				
-				
-				<a href="#contact" class="btn btn-main page-scroll">Leave us a note, to let us know you&#39;re interested!</a>
-				
-				
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Start Services Section -->
 
 
 
@@ -414,7 +320,7 @@
 
 
 <!-- Start Pricing section -->
-<section id="howitworks" class="hiwi section">
+<section id="howitworks" class="hiwi section-bg">
   <div class="container">
     <div class="row justify-content-center">
 
@@ -428,59 +334,24 @@
       </div>
       <!-- /section title -->
 
-      
       <!-- single hiwi table -->
       <div class="col-lg-6 col-md-6 col-24 text-center wow fadeInUp" data-wow-duration="200ms">
 	
         <div class="hiw-item">
           <!-- plan name & value -->
           <div class="hiw-title">
-            <h3>Steps</h3>
+            <p>We have gathered the necessary documentation to walk you through Building, Testing and Running vAccel-enabled workloads in a wide range of deployments (standalone, docker, k8s, etc.). Follow the link below to access the docs and start accelerating your ML workloads!</p>
           </div>
 	
-          <!-- plan description -->
-          <ul>
-            
-	    <li>(0): A user calls a function prototype: <pre> image_classify (input) </pre></li>
-	    
-	    <li>(a): vAccelRT determines available backends, chooses what's sane to do (use virtio-backend, use physical device etc.)</li>
-	    
-	    <li>(b): use virtio-accel, call forwarded to virtio-accel backend</li>
-	    
-	    <li>(c): virtio-accel calls vAccelRT, which, in turn, determines the relevant acceleration framework.</li>
-	    
-	    <li>(d): vAccelRT issues the call to the respective framework. The latter returns results to vAccelRT, which, forwards the output to the caller.</li>
-	    
-          </ul>
+	</div>
 
+	<div style="align:center">
           <!-- signup button -->
+          
+          <a class="btn-main" href="docs.vaccel.org">Read the docs</a>
           
         </div>
       </div>
-      <!-- end single hiwi table -->
-	
-      <!-- single hiwi table -->
-      <div class="col-lg-6 col-md-6 col-24 text-center wow fadeInUp" data-wow-duration="200ms">
-	
-        <div class="hiw-item">
-          <!-- plan name & value -->
-          <div class="">
-            <h3></h3>
-          </div>
-	
-          <!-- plan description -->
-          <ul>
-            
-	    <img src="images/vaccel.png" width="650px"/>
-            
-          </ul>
-
-          <!-- signup button -->
-          
-        </div>
-      </div>
-      <!-- end single hiwi table -->
-	
     </div>
   </div>
 </section>
@@ -494,9 +365,9 @@
 
 
 <!-- Start Call To Action -->
-<section id="cta2" class="call-to-action-2 section-sm bg-1 overly" style='background-image: url("https://vaccel.org/images/backgrounds/bg-white-wall.webp")'>
+<section id="cta2" class="call-to-action-2 section-sm bg-1 overly" style='background-image: url("https://vaccel.org")'>
 	
-	<img src="https://vaccel.org/images/backgrounds/bg-white-wall.webp" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/vaccel.org\/images\/backgrounds\/bg-white-wall.jpg)'">
+	<img src="https://vaccel.org" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/vaccel.org)'">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
@@ -504,7 +375,7 @@
 				<p>Browse through our blog to find interesting tutorials about how to try out vAccel on AWS Firecracker locally, or on a public cloud. Check out the ARMv8 section too! Secure and isolated ML inference at the Edge sounds really intriguing!</p>
 				
 				
-				<a href="https://blog.cloudkernels.net" class="btn btn-main page-scroll">CloudKernels BLOG</a>
+				<a href="https://blog.cloudkernels.net" class="btn-main page-scroll">CloudKernels BLOG</a>
 				
 				
 			</div>
@@ -617,6 +488,76 @@
 	</div>
 </section>
 <!-- /contact -->
+
+
+
+
+
+
+
+
+<!-- Start About Section -->
+<section class="bg-one about section" id="about">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+					<h2>  About <span class="color">
+						 Us  </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+
+			
+			<!-- About item -->
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+				<div class="block">
+					<div class="icon-box">
+						<i class="ti-ruler-pencil"></i>
+					</div>
+					<!-- Express About Yourself -->
+					<div class="content text-center">
+						<h3>We&#39;re Engineers</h3>
+						<p>We explore the systems software stack, from the ground up, hacking VMMs and boot code up to applications and unikernels.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- About item -->
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+				<div class="block">
+					<div class="icon-box">
+						<i class="ti-cup"></i>
+					</div>
+					<!-- Express About Yourself -->
+					<div class="content text-center">
+						<h3>We&#39;re Professionals</h3>
+						<p>Backed by a young SME, we offer professional services to entities around the world, tackling complex research &amp; engineering problems.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- About item -->
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+				<div class="block">
+					<div class="icon-box">
+						<i class="ti-thought"></i>
+					</div>
+					<!-- Express About Yourself -->
+					<div class="content text-center">
+						<h3>We have vision</h3>
+						<p>Facilitating the deployment or workloads is what makes us tick.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- /about -->
+
 
 
 
